@@ -1,5 +1,5 @@
 from collections import deque
-from ..models import *
+from .user import User
 
 class Reservation:
     def __init__(self):

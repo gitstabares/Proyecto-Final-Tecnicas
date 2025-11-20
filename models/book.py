@@ -1,4 +1,4 @@
-from ..models import *
+from .reservation import Reservation
 
 class Book():
     def __init__(self, title:str, author:str, isbn:int, genre:str, weight:float, price:float):
@@ -8,4 +8,4 @@ class Book():
         self.__genre__ = genre
         self.__weight__ = weight
         self.__price__ = price
-        self.__reservations__ = Reservation()
+        self.__reservation__ = Reservation()
