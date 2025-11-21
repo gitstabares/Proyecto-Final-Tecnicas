@@ -6,5 +6,3 @@ class BookManager(_Singleton):
         self.__booksByISBN__ = []
         self.__booksByDate__ = []
         self.__inventory__ = {}
-    def add(book):
-        
