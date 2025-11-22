@@ -9,6 +9,8 @@ class Book():
         self.__weight__ = weight
         self.__price__ = price
         self.__reservation__ = Reservation()
+    def __repr__(self):
+        return f"{self.__title__} - {self.__author__}"
     @property
     def title(self):
         return self.__title__
