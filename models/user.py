@@ -1,20 +1,23 @@
+from .lendingHistory import LendingHistory
+
 class User:
-    def __init__(self, name:str, id:int, lendingHistory):
+    # Builder function
+    def __init__(self, name, id, lendingHistory):
         self.__name__ = name
         self.__id__ = id
-        self.__lendingHistory__ = lendingHistory
+        self.__lendingHistory__ = LendingHistory()
+    # Name's getter and setter
     @property
     def name(self):
         return self.__name__
     @name.setter
-    def name(self, new_name:str):
+    def name(self, new_name):
         self.__name__ = new_name
+    # ID's getter
     @property
     def id(self):
         return self.__id__
-    @id.setter
-    def id(self, new_id:int):
-        if new_id > 0: self.__id__ = new_id
+    # Lending history's getter
     @property
     def lendingHistory(self):
         return self.__lendingHistory__

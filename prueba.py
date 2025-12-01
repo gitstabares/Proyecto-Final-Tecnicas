@@ -1,15 +1,3 @@
-def insertionSort(array, key):
-    # Loop towards for each element from second one
-    for i in range(1,len(array)):
-        # Loop backwards to compare each element with the ordered list
-        for j in range(i,0,-1):
-            if key(array[j-1]) > key(array[j]):
-                array[j],array[j-1] = array[j-1],array[j]
-            else:
-                # If element has been sorted, then break its loop
-                break
-    return array
-
 def merge_sort(array, key):
     # Base case: ordered list of one element
     if len(array) == 1:
@@ -34,6 +22,3 @@ def merge_sort(array, key):
         array[i+j:] = left[i:]
 
     return array
-
-def linealSearch(array, key):
-    
