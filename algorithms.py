@@ -35,13 +35,26 @@ def merge_sort(array, key):
 
     return array
 
-def linealSearch(array:list, target, key:callable):
+def linealSearch(array:list, target, key):
+    # Lineal search function to look for ALL the target's ocurrences in the list
     if len(array) > 0: 
-        if key(array[0]) == target: return [array[0]]+linealSearch(array[1:], target, key)
+        if key(array[0]) == target:
+            return [array[0]] + linealSearch(array[1:], target, key)
         return linealSearch(array[1:], target, key)
-    else : return []
+    else:
+        return []
 
-def binarySearch(array:list, target, key:callable):
-    if len(array) == 1 and key(array[0]) == target: return array[0]
-    if target in [key(i) for i in array[:len(array)//2]]: return binarySearch(array[:len(array)//2])
-    else: return binarySearch(array[len(array)//2:])
+def binarySearch(array:list, target, key):
+    # Binary search looks for the UNIQUE target's ocurrences in the list
+    if len(array) == 1:
+        # If the target is the remaining element, returns it, else returns None
+        if key(array[0]) == target:
+            return array[0]
+        else:
+            return None
+    # Recursive calling to look for in the half that could contain the element
+    mid = len(array) // 2
+    if target < key(array[mid]):
+        return binarySearch(array[:mid], target, key)
+    else:
+        return binarySearch(array[mid:], target, key)

@@ -1,6 +1,6 @@
 from .singleton import _Singleton
 from models.book import Book
-import utils
+import algorithms
 class BookManager(_Singleton):
 
     __booksByISBN__ = []
@@ -12,7 +12,7 @@ class BookManager(_Singleton):
         cls.__booksByISBN__.append(book)
         cls.__booksByDate__.append(book)
         cls.__stock__[book] = quantity
-        utils.insertionSort(cls.__booksByISBN__, key=lambda b: b.isbn)
+        algorithms.insertionSort(cls.__booksByISBN__, key=lambda b: b.isbn)
 
     @classmethod
     def setStock(cls,book: Book, quantity: int):
@@ -20,12 +20,12 @@ class BookManager(_Singleton):
 
     @classmethod
     def lookUpByTitle(cls, title: str):
-        return utils.linealSearch(cls.__booksByDate__, title, key=lambda b: b.title)
+        return algorithms.linealSearch(cls.__booksByDate__, title, key=lambda b: b.title)
     
     @classmethod
     def lookUpByAuthor(cls, author: str):
-        return utils.linealSearch(cls.__booksByISBN__, author, key=lambda b: b.author)
+        return algorithms.linealSearch(cls.__booksByISBN__, author, key=lambda b: b.author)
     
     @classmethod
     def lookUpByISBN(cls, isbn: int):
-        return utils.binarySearch(cls.__booksByISBN__, isbn, key=lambda b: b.isbn)
+        return algorithms.binarySearch(cls.__booksByISBN__, isbn, key=lambda b: b.isbn)
