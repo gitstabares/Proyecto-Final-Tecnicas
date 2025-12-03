@@ -24,6 +24,9 @@ def saveData():
     _saveStock()
     _saveUsers()
 
+def _loadReport():
+    return deserialize('Global Report.json')
+
 def _loadBooks():
     return deserialize('Books.json')
 
