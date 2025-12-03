@@ -16,8 +16,8 @@ def mergeSort(array, key):
         return array
     # Recursive calling for both halves (Divide)
     mid = len(array) // 2
-    left = mergeSort(array[:mid])
-    right = mergeSort(array[mid:])
+    left = mergeSort(array[:mid], key)
+    right = mergeSort(array[mid:], key)
     # Ordering of elements in merged list (Merge)
     i = j = 0
     while i < len(left) and j < len(right):

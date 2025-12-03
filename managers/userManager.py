@@ -2,32 +2,22 @@ from .singleton import _Singleton
 import utils.algorithms as alg
 
 class UserManager(_Singleton):
-    _usersByName = []
-    _usersByID = []
+    usersByName = []
+    usersByID = []
 
     # Registering users' method
     @classmethod
     def addUser(cls,user):
-        cls._usersByName.append(user)
-        cls._usersByName = alg.insertionSort(cls._usersByName, key=lambda u: u.name)
-        cls._usersByID.append(user)
-        cls._usersByID = alg.insertionSort(cls._usersByID, key=lambda u: u.userID)
-    
-    # List of users ordered by name getter
-    @property
-    def usersByName(cls):
-        return cls._usersByName
-    
-    # List of users ordered by ID getter
-    @property
-    def usersByID(cls):
-        return cls._usersByID
+        cls.usersByName.append(user)
+        cls.usersByName = alg.insertionSort(cls.usersByName, key=lambda u: u.name)
+        cls.usersByID.append(user)
+        cls.usersByID = alg.insertionSort(cls.usersByID, key=lambda u: u.userID)
 
     # Searching users methods
     @classmethod
     def lookUpByName(cls,name):
-        return alg.linealSearch(cls._usersByName, name, lambda u: u.name)
+        return alg.linealSearch(cls.usersByName, name, lambda u: u.name)
     
     @classmethod
     def lookUpByID(cls,userID):
-        return alg.binarySearch(cls._usersByID, userID, lambda u: u.userID)
+        return alg.binarySearch(cls.usersByID, userID, lambda u: u.userID)

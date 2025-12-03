@@ -1,142 +1,12 @@
 [
     {
         "py/object": "models.book.Book",
-        "title": "Cien a\u00f1os de soledad",
-        "author": "Gabriel Garc\u00eda M\u00e1rquez",
-        "isbn": "ISBN001",
-        "genre": "Realismo m\u00e1gico",
-        "weight": 2.3,
-        "price": 45000,
-        "reservation": {
-            "py/object": "models.reservation.Reservation",
-            "_queue": {
-                "py/reduce": [
-                    {
-                        "py/type": "collections.deque"
-                    },
-                    {
-                        "py/tuple": []
-                    },
-                    null,
-                    {
-                        "py/tuple": []
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "py/object": "models.book.Book",
-        "title": "El coronel no tiene quien le escriba",
-        "author": "Gabriel Garc\u00eda M\u00e1rquez",
-        "isbn": "ISBN002",
-        "genre": "Ficci\u00f3n",
-        "weight": 1.2,
-        "price": 28000,
-        "reservation": {
-            "py/object": "models.reservation.Reservation",
-            "_queue": {
-                "py/reduce": [
-                    {
-                        "py/type": "collections.deque"
-                    },
-                    {
-                        "py/tuple": []
-                    },
-                    null,
-                    {
-                        "py/tuple": []
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "py/object": "models.book.Book",
-        "title": "Rayuela",
-        "author": "Julio Cort\u00e1zar",
-        "isbn": "ISBN003",
-        "genre": "Ficci\u00f3n",
-        "weight": 2.8,
-        "price": 52000,
-        "reservation": {
-            "py/object": "models.reservation.Reservation",
-            "_queue": {
-                "py/reduce": [
-                    {
-                        "py/type": "collections.deque"
-                    },
-                    {
-                        "py/tuple": []
-                    },
-                    null,
-                    {
-                        "py/tuple": []
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "py/object": "models.book.Book",
-        "title": "La ciudad y los perros",
-        "author": "Mario Vargas Llosa",
-        "isbn": "ISBN004",
-        "genre": "Drama",
-        "weight": 1.9,
-        "price": 39000,
-        "reservation": {
-            "py/object": "models.reservation.Reservation",
-            "_queue": {
-                "py/reduce": [
-                    {
-                        "py/type": "collections.deque"
-                    },
-                    {
-                        "py/tuple": []
-                    },
-                    null,
-                    {
-                        "py/tuple": []
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "py/object": "models.book.Book",
-        "title": "Pedro P\u00e1ramo",
-        "author": "Juan Rulfo",
-        "isbn": "ISBN005",
-        "genre": "Realismo m\u00e1gico",
-        "weight": 1.5,
-        "price": 30000,
-        "reservation": {
-            "py/object": "models.reservation.Reservation",
-            "_queue": {
-                "py/reduce": [
-                    {
-                        "py/type": "collections.deque"
-                    },
-                    {
-                        "py/tuple": []
-                    },
-                    null,
-                    {
-                        "py/tuple": []
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "py/object": "models.book.Book",
-        "title": "1984",
-        "author": "George Orwell",
-        "isbn": "ISBN006",
-        "genre": "Distop\u00eda",
-        "weight": 2.1,
-        "price": 42000,
+        "title": "El principito",
+        "author": "Antoine de Saint-Exup\u00e9ry",
+        "isbn": "ISBN019",
+        "genre": "F\u00e1bula",
+        "weight": 1.0,
+        "price": 25000,
         "reservation": {
             "py/object": "models.reservation.Reservation",
             "_queue": {
@@ -183,38 +53,12 @@
     },
     {
         "py/object": "models.book.Book",
-        "title": "Fahrenheit 451",
-        "author": "Ray Bradbury",
-        "isbn": "ISBN008",
-        "genre": "Ciencia ficci\u00f3n",
-        "weight": 1.7,
-        "price": 37000,
-        "reservation": {
-            "py/object": "models.reservation.Reservation",
-            "_queue": {
-                "py/reduce": [
-                    {
-                        "py/type": "collections.deque"
-                    },
-                    {
-                        "py/tuple": []
-                    },
-                    null,
-                    {
-                        "py/tuple": []
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "py/object": "models.book.Book",
-        "title": "Cr\u00f3nica de una muerte anunciada",
+        "title": "El coronel no tiene quien le escriba",
         "author": "Gabriel Garc\u00eda M\u00e1rquez",
-        "isbn": "ISBN009",
+        "isbn": "ISBN002",
         "genre": "Ficci\u00f3n",
-        "weight": 1.4,
-        "price": 32000,
+        "weight": 1.2,
+        "price": 28000,
         "reservation": {
             "py/object": "models.reservation.Reservation",
             "_queue": {
@@ -235,38 +79,12 @@
     },
     {
         "py/object": "models.book.Book",
-        "title": "La sombra del viento",
-        "author": "Carlos Ruiz Zaf\u00f3n",
-        "isbn": "ISBN010",
-        "genre": "Misterio",
-        "weight": 2.6,
-        "price": 48000,
-        "reservation": {
-            "py/object": "models.reservation.Reservation",
-            "_queue": {
-                "py/reduce": [
-                    {
-                        "py/type": "collections.deque"
-                    },
-                    {
-                        "py/tuple": []
-                    },
-                    null,
-                    {
-                        "py/tuple": []
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "py/object": "models.book.Book",
-        "title": "El amor en los tiempos del c\u00f3lera",
-        "author": "Gabriel Garc\u00eda M\u00e1rquez",
-        "isbn": "ISBN011",
-        "genre": "Romance",
-        "weight": 2.9,
-        "price": 54000,
+        "title": "Pedro P\u00e1ramo",
+        "author": "Juan Rulfo",
+        "isbn": "ISBN005",
+        "genre": "Realismo m\u00e1gico",
+        "weight": 1.5,
+        "price": 30000,
         "reservation": {
             "py/object": "models.reservation.Reservation",
             "_queue": {
@@ -313,12 +131,12 @@
     },
     {
         "py/object": "models.book.Book",
-        "title": "El nombre del viento",
-        "author": "Patrick Rothfuss",
-        "isbn": "ISBN013",
-        "genre": "Fantas\u00eda",
-        "weight": 3.0,
-        "price": 60000,
+        "title": "Cr\u00f3nica de una muerte anunciada",
+        "author": "Gabriel Garc\u00eda M\u00e1rquez",
+        "isbn": "ISBN009",
+        "genre": "Ficci\u00f3n",
+        "weight": 1.4,
+        "price": 32000,
         "reservation": {
             "py/object": "models.reservation.Reservation",
             "_queue": {
@@ -339,12 +157,64 @@
     },
     {
         "py/object": "models.book.Book",
-        "title": "El se\u00f1or de los anillos",
-        "author": "J. R. R. Tolkien",
-        "isbn": "ISBN014",
-        "genre": "Fantas\u00eda",
-        "weight": 2.8,
-        "price": 75000,
+        "title": "Fahrenheit 451",
+        "author": "Ray Bradbury",
+        "isbn": "ISBN008",
+        "genre": "Ciencia ficci\u00f3n",
+        "weight": 1.7,
+        "price": 37000,
+        "reservation": {
+            "py/object": "models.reservation.Reservation",
+            "_queue": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.book.Book",
+        "title": "Matar a un ruise\u00f1or",
+        "author": "Harper Lee",
+        "isbn": "ISBN020",
+        "genre": "Drama",
+        "weight": 1.9,
+        "price": 39000,
+        "reservation": {
+            "py/object": "models.reservation.Reservation",
+            "_queue": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.book.Book",
+        "title": "La ciudad y los perros",
+        "author": "Mario Vargas Llosa",
+        "isbn": "ISBN004",
+        "genre": "Drama",
+        "weight": 1.9,
+        "price": 39000,
         "reservation": {
             "py/object": "models.reservation.Reservation",
             "_queue": {
@@ -391,38 +261,12 @@
     },
     {
         "py/object": "models.book.Book",
-        "title": "Dune",
-        "author": "Frank Herbert",
-        "isbn": "ISBN016",
-        "genre": "Ciencia ficci\u00f3n",
-        "weight": 2.7,
-        "price": 68000,
-        "reservation": {
-            "py/object": "models.reservation.Reservation",
-            "_queue": {
-                "py/reduce": [
-                    {
-                        "py/type": "collections.deque"
-                    },
-                    {
-                        "py/tuple": []
-                    },
-                    null,
-                    {
-                        "py/tuple": []
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "py/object": "models.book.Book",
-        "title": "Fundaci\u00f3n",
-        "author": "Isaac Asimov",
-        "isbn": "ISBN017",
-        "genre": "Ciencia ficci\u00f3n",
-        "weight": 1.8,
-        "price": 45000,
+        "title": "1984",
+        "author": "George Orwell",
+        "isbn": "ISBN006",
+        "genre": "Distop\u00eda",
+        "weight": 2.1,
+        "price": 42000,
         "reservation": {
             "py/object": "models.reservation.Reservation",
             "_queue": {
@@ -469,12 +313,12 @@
     },
     {
         "py/object": "models.book.Book",
-        "title": "El principito",
-        "author": "Antoine de Saint-Exup\u00e9ry",
-        "isbn": "ISBN019",
-        "genre": "F\u00e1bula",
-        "weight": 1.0,
-        "price": 25000,
+        "title": "Fundaci\u00f3n",
+        "author": "Isaac Asimov",
+        "isbn": "ISBN017",
+        "genre": "Ciencia ficci\u00f3n",
+        "weight": 1.8,
+        "price": 45000,
         "reservation": {
             "py/object": "models.reservation.Reservation",
             "_queue": {
@@ -495,12 +339,168 @@
     },
     {
         "py/object": "models.book.Book",
-        "title": "Matar a un ruise\u00f1or",
-        "author": "Harper Lee",
-        "isbn": "ISBN020",
-        "genre": "Drama",
-        "weight": 1.9,
-        "price": 39000,
+        "title": "Cien a\u00f1os de soledad",
+        "author": "Gabriel Garc\u00eda M\u00e1rquez",
+        "isbn": "ISBN001",
+        "genre": "Realismo m\u00e1gico",
+        "weight": 2.3,
+        "price": 45000,
+        "reservation": {
+            "py/object": "models.reservation.Reservation",
+            "_queue": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.book.Book",
+        "title": "La sombra del viento",
+        "author": "Carlos Ruiz Zaf\u00f3n",
+        "isbn": "ISBN010",
+        "genre": "Misterio",
+        "weight": 2.6,
+        "price": 48000,
+        "reservation": {
+            "py/object": "models.reservation.Reservation",
+            "_queue": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.book.Book",
+        "title": "Rayuela",
+        "author": "Julio Cort\u00e1zar",
+        "isbn": "ISBN003",
+        "genre": "Ficci\u00f3n",
+        "weight": 2.8,
+        "price": 52000,
+        "reservation": {
+            "py/object": "models.reservation.Reservation",
+            "_queue": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.book.Book",
+        "title": "El amor en los tiempos del c\u00f3lera",
+        "author": "Gabriel Garc\u00eda M\u00e1rquez",
+        "isbn": "ISBN011",
+        "genre": "Romance",
+        "weight": 2.9,
+        "price": 54000,
+        "reservation": {
+            "py/object": "models.reservation.Reservation",
+            "_queue": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.book.Book",
+        "title": "El nombre del viento",
+        "author": "Patrick Rothfuss",
+        "isbn": "ISBN013",
+        "genre": "Fantas\u00eda",
+        "weight": 3.0,
+        "price": 60000,
+        "reservation": {
+            "py/object": "models.reservation.Reservation",
+            "_queue": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.book.Book",
+        "title": "Dune",
+        "author": "Frank Herbert",
+        "isbn": "ISBN016",
+        "genre": "Ciencia ficci\u00f3n",
+        "weight": 2.7,
+        "price": 68000,
+        "reservation": {
+            "py/object": "models.reservation.Reservation",
+            "_queue": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.book.Book",
+        "title": "El se\u00f1or de los anillos",
+        "author": "J. R. R. Tolkien",
+        "isbn": "ISBN014",
+        "genre": "Fantas\u00eda",
+        "weight": 2.8,
+        "price": 75000,
         "reservation": {
             "py/object": "models.reservation.Reservation",
             "_queue": {

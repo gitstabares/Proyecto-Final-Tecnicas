@@ -30,35 +30,39 @@ class Bookshelf(_Singleton):
         bestValue = 0
         bestCombination = []
 
-        def backtrack(index, actualWeight, actualPrice, actualCombination):
+        def backtrack(index, currentWeight, currentPrice, currentCombination):
             nonlocal bestValue, bestCombination
 
             # Base case: all the books have been evaluated
             if index == len(books):
-                if actualPrice > bestValue:
-                    bestValue = actualPrice
-                    bestCombination = actualCombination.copy()
+                if currentPrice > bestValue:
+                    bestValue = currentPrice
+                    bestCombination = currentCombination.copy()
                 return
 
-            actualBook = books[index]
+            currentBook = books[index]
+
+            print(f"Exploring the book in the index {index} of the list: {currentBook}\n",
+                  f"The current combination is {currentCombination}, which weighs {currentWeight} ",
+                  f"and it costs {currentPrice}")
 
             # First case: Evaluate the actual book (If it doesn't break the weight rule)
-            if actualWeight + actualBook.weight <= maxWeight:
-                actualCombination.append(actualBook)
+            if currentWeight + currentBook.weight <= maxWeight:
+                currentCombination.append(currentBook)
                 backtrack(
                     index + 1,
-                    actualWeight + actualBook.weight,
-                    actualPrice + actualBook.price,
-                    actualCombination
+                    currentWeight + currentBook.weight,
+                    currentPrice + currentBook.price,
+                    currentCombination
                 )
-                actualCombination.pop()  # Backtracking: Remove the element to evaluate the second case
+                currentCombination.pop()  # Backtracking: Remove the element to evaluate the second case
 
             # Second case: Do not evaluate the actual book
             backtrack(
                 index + 1,
-                actualWeight,
-                actualPrice,
-                actualCombination
+                currentWeight,
+                currentPrice,
+                currentCombination
             )
 
         # First call

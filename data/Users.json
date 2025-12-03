@@ -1,0 +1,722 @@
+[
+    {
+        "py/object": "models.user.User",
+        "name": "Ana L\u00f3pez",
+        "userID": 1,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "Andr\u00e9s Morales",
+        "userID": 13,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "Camila Castro",
+        "userID": 10,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "Carlos P\u00e9rez",
+        "userID": 2,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "Daniel Torres",
+        "userID": 7,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "Felipe C\u00e1rdenas",
+        "userID": 15,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "Gabriela Arias",
+        "userID": 18,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "H\u00e9ctor Mendoza",
+        "userID": 17,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "Isabela Ni\u00f1o",
+        "userID": 14,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "Jorge Ram\u00edrez",
+        "userID": 5,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "Juliana Duarte",
+        "userID": 12,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "Laura Herrera",
+        "userID": 8,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "Mar\u00eda Rodr\u00edguez",
+        "userID": 3,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "Mateo Rivas",
+        "userID": 11,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "Natalia Quintero",
+        "userID": 20,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "Paula Ram\u00edrez",
+        "userID": 16,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "Ricardo V\u00e9lez",
+        "userID": 19,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "Sebasti\u00e1n D\u00edaz",
+        "userID": 9,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "Sof\u00eda Mart\u00ednez",
+        "userID": 4,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "py/object": "models.user.User",
+        "name": "Valentina G\u00f3mez",
+        "userID": 6,
+        "lendingHistory": {
+            "py/object": "models.lendingHistory.LendingHistory",
+            "_isbnStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            },
+            "_dateStack": {
+                "py/reduce": [
+                    {
+                        "py/type": "collections.deque"
+                    },
+                    {
+                        "py/tuple": []
+                    },
+                    null,
+                    {
+                        "py/tuple": []
+                    }
+                ]
+            }
+        }
+    }
+]
