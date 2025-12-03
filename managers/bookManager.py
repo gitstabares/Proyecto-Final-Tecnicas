@@ -9,7 +9,7 @@ class BookManager(_Singleton):
     globalReport = []
     stock = {}
 
-    # Registering book method
+    # Register book
     @classmethod
     def addBook(cls,book, quantity = 1):
         cls.booksByISBN.append(book)
@@ -18,6 +18,15 @@ class BookManager(_Singleton):
         cls.stock[book] = quantity
         cls.booksByISBN = alg.insertionSort(cls.booksByISBN, key=lambda b: b.isbn)
         cls.globalReport = alg.mergeSort(cls.globalReport, key=lambda b: b.price)
+
+    # Delete book from lists
+    @classmethod
+    def removeBook(cls,book):
+        if book in cls.booksByISBN:
+            cls.booksByISBN.remove(book)
+            cls.booksByDate.remove(book)
+            cls.globalReport.remove(book)
+            del cls.stock[book]
 
     # Stock's setter
     @classmethod
@@ -37,48 +46,18 @@ class BookManager(_Singleton):
     def lookUpByISBN(cls, isbn):
         return alg.binarySearch(cls.booksByISBN, isbn, key=lambda b: b.isbn)
     
-    # Method for generate global report
+    # Generate global report
     @classmethod
     def generateReport(cls):
         serialize(cls.globalReport,'Global Report.json')
         return cls.globalReport
     
-    # Stack's recursive method
-    @classmethod
-    def totalValue(cls, author, books = booksByDate):
-        # Base case: there's one last remaining element
-        if len(books) == 0:
-            return 0
-        
-        # Recursive call
-        if books[0].author == author:
-            return books[0].price + cls.totalValue(author, books[1:])
-        return cls.totalValue(author, books[1:])
+    # Recursive function to calculate the total price of a list of books written by given author
+    def totalPrice(author):
+        books = [b for b in BookManager.booksByDate if b.author == author]
+        return alg.recursiveAddition(books, lambda b:b.price)
     
-    # Tail's recursive method
-    @classmethod
-    def meanWeight(cls, author, index=0, total_weight=0, count=0):
-
-        print(f"Recursive call: index={index}, total_weight={total_weight}, count={count}")
-
-        # Base case: Booklist finished
-        if index == len(cls.booksByDate):
-            if count == 0:
-                return 0  # There's no books of this author
-            return total_weight / count
-
-        # If there are books of the author, add them
-        if cls.booksByDate[index].author == author:
-            new_total = total_weight + cls.booksByDate[index].weight
-            new_count = count + 1
-        else:
-            new_total = total_weight
-            new_count = count
-
-        # Next recursive call
-        return cls.meanWeight(
-            author,
-            index + 1,
-            new_total,
-            new_count
-        )
+    # Recursive function to calculate the total price of a list of books written by given author
+    def meanWeight(author):
+        books = [b for b in BookManager.booksByDate if b.author == author]
+        return alg.recursiveMean(books, lambda b:b.weight)

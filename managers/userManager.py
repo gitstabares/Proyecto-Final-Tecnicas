@@ -5,13 +5,19 @@ class UserManager(_Singleton):
     usersByName = []
     usersByID = []
 
-    # Registering users' method
+    # Register user
     @classmethod
     def addUser(cls,user):
         cls.usersByName.append(user)
         cls.usersByName = alg.insertionSort(cls.usersByName, key=lambda u: u.name)
         cls.usersByID.append(user)
         cls.usersByID = alg.insertionSort(cls.usersByID, key=lambda u: u.userID)
+
+    # Remove user
+    @classmethod
+    def removeUser(cls,user):
+        cls.usersByName.remove(user)
+        cls.usersByID.remove(user)
 
     # Searching users methods
     @classmethod
