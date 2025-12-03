@@ -1,7 +1,7 @@
 [
     {
         "py/object": "models.user.User",
-        "name": "Ana L\u00f3pez",
+        "name": "Ana Lopez",
         "userID": 1,
         "lendingHistory": {
             "py/object": "models.lendingHistory.LendingHistory",
@@ -37,7 +37,7 @@
     },
     {
         "py/object": "models.user.User",
-        "name": "Andr\u00e9s Morales",
+        "name": "Andres Morales",
         "userID": 13,
         "lendingHistory": {
             "py/object": "models.lendingHistory.LendingHistory",
@@ -109,7 +109,7 @@
     },
     {
         "py/object": "models.user.User",
-        "name": "Carlos P\u00e9rez",
+        "name": "Carlos Perez",
         "userID": 2,
         "lendingHistory": {
             "py/object": "models.lendingHistory.LendingHistory",
@@ -181,7 +181,7 @@
     },
     {
         "py/object": "models.user.User",
-        "name": "Felipe C\u00e1rdenas",
+        "name": "Felipe Cardenas",
         "userID": 15,
         "lendingHistory": {
             "py/object": "models.lendingHistory.LendingHistory",
@@ -253,7 +253,7 @@
     },
     {
         "py/object": "models.user.User",
-        "name": "H\u00e9ctor Mendoza",
+        "name": "Hector Mendoza",
         "userID": 17,
         "lendingHistory": {
             "py/object": "models.lendingHistory.LendingHistory",
@@ -289,7 +289,7 @@
     },
     {
         "py/object": "models.user.User",
-        "name": "Isabela Ni\u00f1o",
+        "name": "Isabela Nino",
         "userID": 14,
         "lendingHistory": {
             "py/object": "models.lendingHistory.LendingHistory",
@@ -325,7 +325,7 @@
     },
     {
         "py/object": "models.user.User",
-        "name": "Jorge Ram\u00edrez",
+        "name": "Jorge Ramirez",
         "userID": 5,
         "lendingHistory": {
             "py/object": "models.lendingHistory.LendingHistory",
@@ -433,7 +433,7 @@
     },
     {
         "py/object": "models.user.User",
-        "name": "Mar\u00eda Rodr\u00edguez",
+        "name": "Maria Rodriguez",
         "userID": 3,
         "lendingHistory": {
             "py/object": "models.lendingHistory.LendingHistory",
@@ -541,7 +541,7 @@
     },
     {
         "py/object": "models.user.User",
-        "name": "Paula Ram\u00edrez",
+        "name": "Paula Ramirez",
         "userID": 16,
         "lendingHistory": {
             "py/object": "models.lendingHistory.LendingHistory",
@@ -577,7 +577,7 @@
     },
     {
         "py/object": "models.user.User",
-        "name": "Ricardo V\u00e9lez",
+        "name": "Ricardo Velez",
         "userID": 19,
         "lendingHistory": {
             "py/object": "models.lendingHistory.LendingHistory",
@@ -613,7 +613,7 @@
     },
     {
         "py/object": "models.user.User",
-        "name": "Sebasti\u00e1n D\u00edaz",
+        "name": "Sebastian Diaz",
         "userID": 9,
         "lendingHistory": {
             "py/object": "models.lendingHistory.LendingHistory",
@@ -649,7 +649,7 @@
     },
     {
         "py/object": "models.user.User",
-        "name": "Sof\u00eda Mart\u00ednez",
+        "name": "Sofia Martinez",
         "userID": 4,
         "lendingHistory": {
             "py/object": "models.lendingHistory.LendingHistory",
@@ -685,7 +685,7 @@
     },
     {
         "py/object": "models.user.User",
-        "name": "Valentina G\u00f3mez",
+        "name": "Valentina Gomez",
         "userID": 6,
         "lendingHistory": {
             "py/object": "models.lendingHistory.LendingHistory",

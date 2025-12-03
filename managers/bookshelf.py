@@ -5,7 +5,7 @@ class Bookshelf(_Singleton):
 
     # Brute force method to look for the worst books combination
     @classmethod
-    def poorBookshelf(cls, books = BookManager.booksByDate, maxWeight = 8):
+    def poorBookshelf(cls, maxWeight = 8):
         '''
         Lists the combinations of four books that exceed the max weight allowed
         Args:
@@ -14,6 +14,7 @@ class Bookshelf(_Singleton):
         Returns:
             list: Combinations
         '''
+        books = BookManager.booksByDate
         n = len(books)
         combination = []
         # If there's less than 4 books, so there's no combination that fullfill the conditions
@@ -35,7 +36,7 @@ class Bookshelf(_Singleton):
     
     # Backtracking algorithm to look for the optimal book combination (Knapsack algorithm)
     @classmethod
-    def optimalBookshelf(cls, books = BookManager.booksByDate, maxWeight = 8):
+    def optimalBookshelf(cls, maxWeight = 8):
         '''
         Look for the optimal bookshelf with the biggest value without exceed the max weight. Also called Knapsack Algorithm
         Args:
@@ -44,6 +45,7 @@ class Bookshelf(_Singleton):
         Returns:
             list: Optimal combination
         '''
+        books = BookManager.booksByDate
         bestValue = 0
         bestCombination = []
 

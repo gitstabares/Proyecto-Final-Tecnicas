@@ -12,9 +12,9 @@ class LendingManager(_Singleton):
             book(Book): Book to be lent
         '''
         # If there's stock the book is lent
-        if BookManager.stock[book] > 0:
+        if BookManager.stock[str(book)] > 0:
             user.lendingHistory.push(book)
-            BookManager.stock[book] -= 1
+            BookManager.stock[str(book)] -= 1
         # Else, add the user to the book's waiting list
         else:
             book.reservation.push(user)
@@ -26,7 +26,7 @@ class LendingManager(_Singleton):
         Args:
             book(Book): Book to be lent
         '''        
-        BookManager.stock[book] += 1
+        BookManager.stock[str(book)] += 1
         nextUser = book.reservation.pull()
         # If there's someone in the waiting list after the book is returned, then it can be lent again
         if nextUser:

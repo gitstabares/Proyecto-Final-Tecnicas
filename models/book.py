@@ -14,4 +14,7 @@ class Book(object):
         BookManager.addBook(self)
         
     def __repr__(self):
-        return f"{self.title} - {self.author}"
+        return f"{self.title} - {self.author} - ${self.price} COP - {self.weight} kg"
+    
+    def __str__(self):
+        return f"{self.title} - {self.author} - ${self.price} COP - {self.weight} kg"

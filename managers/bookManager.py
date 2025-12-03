@@ -15,7 +15,7 @@ class BookManager(_Singleton):
         cls.booksByISBN.append(book)
         cls.booksByDate.append(book)
         cls.globalReport.append(book)
-        cls.stock[book] = quantity
+        cls.stock[book.isbn] = quantity
         cls.booksByISBN = alg.insertionSort(cls.booksByISBN, key=lambda b: b.isbn)
         cls.globalReport = alg.mergeSort(cls.globalReport, key=lambda b: b.price)
 
@@ -24,9 +24,12 @@ class BookManager(_Singleton):
     def removeBook(cls,book):
         if book in cls.booksByISBN:
             cls.booksByISBN.remove(book)
+        if book in cls.booksByDate:
             cls.booksByDate.remove(book)
+        if book in cls.globalReport:
             cls.globalReport.remove(book)
-            del cls.stock[book]
+        if str(book) in cls.stock.keys():
+            del cls.stock[str(book)]
 
     # Stock's setter
     @classmethod

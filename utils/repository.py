@@ -24,9 +24,6 @@ def saveData():
     _saveStock()
     _saveUsers()
 
-def _loadReport():
-    return deserialize('Global Report.json')
-
 def _loadBooks():
     return deserialize('Books.json')
 
@@ -40,9 +37,9 @@ def loadData():
     '''
     Loads all the data saved in the data's folder files and dumps it in its respectives datastructures
     '''
-    BookManager.globalReport = _loadReport()
     BookManager.booksByDate = _loadBooks()
-    BookManager.booksByISBN = insertionSort(BookManager.booksByDate, lambda b: b.isbn)
+    BookManager.booksByISBN = insertionSort(BookManager.booksByDate.copy(), lambda b: b.isbn)
+    BookManager.globalReport = mergeSort(BookManager.booksByDate.copy(), lambda b: b.price)
     BookManager.stock = _loadStock()
     UserManager.usersByName = _loadUsers()
-    UserManager.usersByID = insertionSort(UserManager.usersByName, lambda u: u.userID)
+    UserManager.usersByID = insertionSort(UserManager.usersByName.copy(), lambda u: u.userID)

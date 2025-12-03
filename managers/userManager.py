@@ -16,8 +16,10 @@ class UserManager(_Singleton):
     # Remove user
     @classmethod
     def removeUser(cls,user):
-        cls.usersByName.remove(user)
-        cls.usersByID.remove(user)
+        if user in cls.usersByName:
+            cls.usersByName.remove(user)
+        if user in cls.usersByID:
+            cls.usersByID.remove(user)
 
     # Searching users methods
     @classmethod

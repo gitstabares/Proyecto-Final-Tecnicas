@@ -108,7 +108,7 @@ def recursiveAddition(array, key):
         return 0
     
     # Recursive call
-    return key(array[0]) + recursiveAddition(array[1:])
+    return key(array[0]) + recursiveAddition(array[1:], key)
 
 # Tail's recursive method
 def recursiveMean(array, key, index=0, total=0, count=0):
