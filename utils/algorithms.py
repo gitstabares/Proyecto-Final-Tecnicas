@@ -10,14 +10,14 @@ def insertionSort(array, key):
                 break
     return array
 
-def merge_sort(array, key):
+def mergeSort(array, key):
     # Base case: ordered list of one element
     if len(array) == 1:
         return array
     # Recursive calling for both halves (Divide)
     mid = len(array) // 2
-    left = merge_sort(array[:mid])
-    right = merge_sort(array[mid:])
+    left = mergeSort(array[:mid])
+    right = mergeSort(array[mid:])
     # Ordering of elements in merged list (Merge)
     i = j = 0
     while i < len(left) and j < len(right):

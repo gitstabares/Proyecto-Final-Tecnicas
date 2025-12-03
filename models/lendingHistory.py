@@ -4,17 +4,17 @@ from datetime import date
 class LendingHistory():
     # Builder function
     def __init__(self):
-        self.__isbnStack__ = deque()
-        self.__dateStack__ = deque()
+        self._isbnStack = deque()
+        self._dateStack = deque()
     # Push and pull function for stack
     def push(self,book):
-        self.__isbnStack__.append(book.isbn)
-        self.__dateStack__.append(date.today())
+        self._isbnStack.append(book.isbn)
+        self._dateStack.append(date.today())
     def pull(self):
-        if self.__isbnStack__ and self.__dateStack__:
-            return (self.__isbnStack__.pop(), self.__dateStack__.pop())
+        if self._isbnStack and self._dateStack:
+            return (self._isbnStack.pop(), self._dateStack.pop())
         return None
     # Function to clear all the stack
     def clear(self):
-        self.__isbnStack__.clear()
-        self.__dateStack__.clear()
+        self._isbnStack.clear()
+        self._dateStack.clear()
