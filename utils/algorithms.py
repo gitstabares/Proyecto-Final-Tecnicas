@@ -1,4 +1,12 @@
 def insertionSort(array, key):
+    '''
+    Sort an arraylist according to the key using the Insertion Sort algorithm
+    Args:
+        array(list): List to be sorted
+        key(lambda function): Sorting criteria. It must return the property used as criteria
+    Returns:
+        list: Sorted list
+    '''
     # Loop towards for each element from second one
     for i in range(1,len(array)):
         # Loop backwards to compare each element with the ordered list
@@ -11,6 +19,14 @@ def insertionSort(array, key):
     return array
 
 def mergeSort(array, key):
+    '''
+    Sort an arraylist according to the key using the Merge Sort algorithm
+    Args:
+        array(list): List to be sorted
+        key(lambda function): Sorting criteria. It must return the property used as criteria
+    Returns:
+        list: Sorted list
+    '''
     # Base case: ordered list of one element
     if len(array) == 1:
         return array
@@ -36,6 +52,15 @@ def mergeSort(array, key):
     return array
 
 def linealSearch(array:list, target, key):
+    '''
+    Look for an element in a sorted/unsorted list and returns all the ocurrences in the list
+    Args:
+        array(list): List in which the element is searched
+        target(object): Atribute to look for in the elements of the list
+        key(lambda function): Searching criteria. It must return the property used as criteria
+    Returns:
+        list: List with all the element that fulfill the criteria. Returns [] if the element wasn't found
+    '''
     # Lineal search function to look for ALL the target's ocurrences in the list
     if len(array) > 0: 
         if key(array[0]) == target:
@@ -45,6 +70,15 @@ def linealSearch(array:list, target, key):
         return []
 
 def binarySearch(array:list, target, key):
+    '''
+    Look for an element in a sorted list of unique elements and returns the unique ocurrence
+    Args:
+        array(list): List in which the element is searched
+        target(object): Atribute to look for in the elements of the list
+        key(lambda function): Searching criteria. It must return the property used as criteria
+    Returns:
+        object: Element found in the list that fulfill the criteria. None if the element wasn't found
+    '''
     # Binary search looks for the UNIQUE target's ocurrences in the list
     if len(array) == 1:
         # If the target is the remaining element, returns it, else returns None
