@@ -15,7 +15,7 @@ class BookManager(_Singleton):
         cls.booksByISBN.append(book)
         cls.booksByDate.append(book)
         cls.globalReport.append(book)
-        cls.stock[book.isbn] = quantity
+        cls.stock[book] = quantity
         cls.booksByISBN = alg.insertionSort(cls.booksByISBN, key=lambda b: b.isbn)
         cls.globalReport = alg.mergeSort(cls.globalReport, key=lambda b: b.price)
 
